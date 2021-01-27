@@ -10,7 +10,7 @@ import pandas as pd
 from azureml.core.run import Run
 from azureml.data.dataset_factory import TabularDatasetFactory
 
-uri = 'https://raw.githubusercontent.com/himanshu004/AZMLND_Capstone/main/dataset.csv'
+uri = 'https://raw.githubusercontent.com/himanshu004/AZMLND_Capstone/main/data.csv'
 ds = TabularDatasetFactory.from_delimited_files(path = uri)
 
 x_df = ds.to_pandas_dataframe().dropna()
