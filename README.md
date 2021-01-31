@@ -28,12 +28,12 @@ The features of the dataset on which the models are trained are:
 
 ### Access
 The data is first preprocessed (Label and One-Hot Encoding is applied) and uploaded to the project github repository and is then accessed using the TabularDatasetFactory module available in the Azure's dataset_factory using the uri of the dataset. Then it is converted into pandas DataFrame using the to_pandas_dataframe() function.
-![alt text](https://github.com/himanshu004/AZMLND_Capstone/blob/main/images/Screenshot%20(39).png)
+![alt text](https://github.com/himanshu004/AZMLND_Capstone/blob/main/images/Screenshot%20(39).png.jpg)
 <br>
 
 ## Automated ML
 AutoML settings and confuguration used:<br>
-![alt text](https://github.com/himanshu004/AZMLND_Capstone/blob/main/images/Screenshot%20(38).png)
+![alt text](https://github.com/himanshu004/AZMLND_Capstone/blob/main/images/Screenshot%20(38).png.jpg)
 <br>
 Explanation: Since we had to assign labels to the new data using the model trained on the training data, the 'task' is set to classification. There are many evaluation metrics for classification tasks but here we have chosen 'accuracy' as our primary_metric(the model will run to maximize the primary_metric).
 Then the training data(as a TabularDataSet) and the target column('Exited) was assigned. The compute_target was set to the cluster that was specially created for this project. The 'n_cross_validations' and 'iterations' parameters were set randomly(7 and 5 respectively) on the basis on intuition, and can be tuned as per requirements in order to get varying results.
