@@ -85,14 +85,19 @@ With the above parameters, we achieved an accuracy of 0.8035, which is lesser th
 2. The reason behind a run failure of an experiment is not shown as an output. This should also be taken care of as it becomes a tedious task searching the error manually line by line.
 3. Logging can be made more descriptive.
 <br>
+
 ![alt text](https://github.com/himanshu004/AZMLND_Capstone/blob/main/images/Screenshot%20(40).png)
 <br><br>
+
 ![alt text](https://github.com/himanshu004/AZMLND_Capstone/blob/main/images/Screenshot%20(41).png)
 <br><br>
+
 ![alt text](https://github.com/himanshu004/AZMLND_Capstone/blob/main/images/Screenshot%20(42).png)
 <br><br>
+
 ![alt text](https://github.com/himanshu004/AZMLND_Capstone/blob/main/images/Screenshot%20(43).png)
 <br><br>
+
 ![alt text](https://github.com/himanshu004/AZMLND_Capstone/blob/main/images/Screenshot%20(44).png)
 <br><br>
 
