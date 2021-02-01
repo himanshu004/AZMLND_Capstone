@@ -45,10 +45,15 @@ In our experiment we found out ensembling machine learning models give the best 
 The parameters for Voting Ensemble were: 
 boosting_type' as 'gbdt', 'colsample_bytree' = 1.0, 'min_child_weight' = 0.001, 'n_estimators' = 100, 'n_jobs' = 1, 'num_leaves' = 31, 'silent': True, 'subsample' = 1.0, 'subsample_for_bin' = 200000, 'subsample_freq' = 0, 'verbose' = -10, 'importance_type' was 'split', 'learning_rate' = 0.1 and 'min_child_samples' = 20.
 
+AutomML experiment status showing completed with VotingEnsemble giving the best accuracy.<br>
 ![alt text](https://github.com/himanshu004/AZMLND_Capstone/blob/main/images/Screenshot%20(45).png)
 <br><br>
+
+The metrics of the best run can be obtained using the get_metrics() method. The status of the experimenet is also shown, which is 'completed' in this case. <br>
 ![alt text](https://github.com/himanshu004/AZMLND_Capstone/blob/main/images/Screenshot%20(46).png)
 <br><br>
+
+Assigning the name to the best model and saving it as a pickle file.
 ![alt text](https://github.com/himanshu004/AZMLND_Capstone/blob/main/images/Screenshot%20(47).png)
 <br><br>
 
@@ -75,7 +80,7 @@ Benefits of the parameter sampler: Choosing the right parameter sampling method 
 * max_concurrent_runs = 4
 
 ### Results
-With the above parameters, we achieved an accuracy of 0.8035, which is lesser than what we achieved in the AutoML experiment.<br>
+With the above parameters, we achieved an accuracy of 0.8035, which is lesser than what we achieved in the AutoML experiment. Also, the parameters of the best run can also be seen.<br>
 ![alt text](https://github.com/himanshu004/AZMLND_Capstone/blob/main/images/Screenshot%20(37).png)
 <br><br>
 
@@ -86,18 +91,23 @@ With the above parameters, we achieved an accuracy of 0.8035, which is lesser th
 3. Logging can be made more descriptive.
 <br>
 
+Running the hyperdrive experiment. The logs can be seen and are saved to hyperdrive.txt file.
 ![alt text](https://github.com/himanshu004/AZMLND_Capstone/blob/main/images/Screenshot%20(40).png)
 <br><br>
 
+Overview of the different runs of the experiment, and the best accuracy score achieved is 0.8035,along with the run ID.
 ![alt text](https://github.com/himanshu004/AZMLND_Capstone/blob/main/images/Screenshot%20(41).png)
 <br><br>
 
+The accuracy fluctuation chart of the experiment. We can toggle the charts for better explainability.
 ![alt text](https://github.com/himanshu004/AZMLND_Capstone/blob/main/images/Screenshot%20(42).png)
 <br><br>
 
+Printing the best run model and it's metrics, using the get_metrics() method.
 ![alt text](https://github.com/himanshu004/AZMLND_Capstone/blob/main/images/Screenshot%20(43).png)
 <br><br>
 
+Assigning the name to the best model and saving it as a pickle file.
 ![alt text](https://github.com/himanshu004/AZMLND_Capstone/blob/main/images/Screenshot%20(44).png)
 <br><br>
 
@@ -125,4 +135,4 @@ and achieved a testing accuracy of 80%.
 
 
 ## Screen Recording
-Click [here](https://youtu.be/TdtnoNcarOg) to see the ScreenCast.
+Click [here](https://youtu.be/YnNH4H0Ah5s) to see the ScreenCast.
